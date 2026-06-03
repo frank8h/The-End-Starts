@@ -44,9 +44,7 @@ mc_thought "And right now..."{w=0.5}That starts with surviving my first day."
 scene University_Hallway_MC_LS_BU_Day
 
 n "He picked up his pace and continued down the hallway."
-
 n "The feeling of uncertainty hadn't disappeared."
-
 n "But at least he was moving again."
 
 scene University_Hallway_Secondary_Day
@@ -57,13 +55,10 @@ show MC Front Stand_Bag LS_BD:
     zoom 0.4
 
 n "The university was larger than he expected."
-
 n "Every hallway seemed connected to another."
-
 n "Every turn revealed a place he hadn't seen before."
 
 mc_thought "I should've looked at the map."
-
 mc_thought "Or at least pretended I knew where I was going."
 
 scene University_Hallway_Window_Day
@@ -74,21 +69,15 @@ show MC Front Stand_Bag LR_BD:
     zoom 0.4
 
 n "As he walked, his attention drifted toward the tall windows lining the corridor."
-
 n "Morning sunlight spilled across the floor and illuminated parts of the campus outside."
 
 mc_thought "..."
-
 mc_thought "I have to admit."
-
 mc_thought "This place looks better than I expected."
 
 n "For the first time since arriving, a small smile appeared on his face."
-
 n "Maybe..."
-
 n "Just maybe..."
-
 n "Starting over wouldn't be as terrible as he imagined."
 
 #═══════════════════════
