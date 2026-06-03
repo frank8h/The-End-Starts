@@ -1,1 +1,99 @@
-#Choice_2 Help Emily
+#═══════════════════════
+# RETURN
+#═══════════════════════
+
+scene black
+with Dissolve(1.0)
+
+pause 0.5
+
+centered "{size=+15}Back to reality...{/size}"
+
+scene University_Hallway_Back_Empty_Day
+show black:
+    alpha 0.9
+
+centered "{size=+15}07:55 AM{/size}"
+
+pause 1.0
+
+scene University_Hallway_MC_Think_BG_Day
+with fade
+
+n "The memory slowly faded away."
+n "The crowded hallway returned."
+n "The voices, footsteps."
+n "The noise of students moving from one class to another."
+n "For a moment, it felt strange."
+n "As if part of him was still sitting in that old room staring at those documents."
+
+mc_thought "..."
+mc_thought "No."
+mc_thought "I'm not here to think about that."
+mc_thought "Not today."
+
+scene University_Hallway_MC_LS_BD_Day
+with Fade(0.8, 0.5, 0.8)
+
+n "He took a slow breath and adjusted the strap of his bag."
+
+mc_thought "I came all the way here for a reason."
+mc_thought "If I want answers...{w=0.5}Then I have to start somewhere."
+mc_thought "And right now..."{w=0.5}That starts with surviving my first day."
+
+scene University_Hallway_MC_LS_BU_Day
+
+n "He picked up his pace and continued down the hallway."
+
+n "The feeling of uncertainty hadn't disappeared."
+
+n "But at least he was moving again."
+
+scene University_Hallway_Secondary_Day
+
+show MC Front Stand_Bag LS_BD:
+    xpos 350
+    ypos 270
+    zoom 0.4
+
+n "The university was larger than he expected."
+
+n "Every hallway seemed connected to another."
+
+n "Every turn revealed a place he hadn't seen before."
+
+mc_thought "I should've looked at the map."
+
+mc_thought "Or at least pretended I knew where I was going."
+
+scene University_Hallway_Window_Day
+
+show MC Front Stand_Bag LR_BD:
+    xpos 800
+    ypos 310
+    zoom 0.4
+
+n "As he walked, his attention drifted toward the tall windows lining the corridor."
+
+n "Morning sunlight spilled across the floor and illuminated parts of the campus outside."
+
+mc_thought "..."
+
+mc_thought "I have to admit."
+
+mc_thought "This place looks better than I expected."
+
+n "For the first time since arriving, a small smile appeared on his face."
+
+n "Maybe..."
+
+n "Just maybe..."
+
+n "Starting over wouldn't be as terrible as he imagined."
+
+#═══════════════════════
+# COLLISION
+#═══════════════════════
+
+scene Collision 1
+with fade
