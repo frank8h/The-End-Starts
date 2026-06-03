@@ -90,27 +90,18 @@ with fade
 n "As he continued down the hallway, his attention drifted from one thing to another."
 
 mc_thought "I still need to unpack half the apartment."
-
 mc_thought "Buy groceries."
-
 mc_thought "Figure out where everything is around here."
-
 mc_thought "And somehow survive my first week."
+
+n "He glanced toward the posters on his left."
+
+mc_thought "The new apartment..{w=0.5}The university..{w=0.5}The transfer."
+mc_thought "Maybe I took on too much at once."
 
 scene Collision 2
 
-n "He glanced toward the classrooms on his left."
-
-mc_thought "The new apartment..."
-
-mc_thought "The university..."
-
-mc_thought "The transfer..."
-
-mc_thought "Maybe I took on too much at once."
-
 n "At that exact moment—"
-
 n "Someone suddenly rushed out of a nearby classroom."
 
 #Both talking at the same time
@@ -124,18 +115,14 @@ with hpunch
 
 n "Neither of them had enough time to react."
 
-n "{color=#2D4F7A}[player_name]{/color}: {color=#00FFB3}What the—?!{/color}\n{color=#D42F75}.....{/color}: {color=#00FFB3}Ah—!{/color}"
+n "{color=#2D4F7A}[player_name]{/color}: {color=#00FFB3}What...?!{/color}\n{color=#D42F75}.....{/color}: {color=#00FFB3}Ah—!{/color}"
 
 scene Collision 4
 
 n "The collision wasn't hard."
-
 n "But it was enough."
-
 n "Several books slipped from her arms."
-
 n "A folder hit the floor."
-
 n "Loose papers scattered across the hallway."
 
 scene Collision 5
