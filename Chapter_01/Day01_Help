@@ -127,7 +127,7 @@ n "Loose papers scattered across the hallway."
 
 scene Collision 5
 
-f_anonymous "Oh no..."
+f_anonymous "Oh no...!"
 
 mc "Huh...?!"
 
@@ -136,37 +136,25 @@ n "The sound of falling books echoed louder than it should have."
 scene Collision 6
 
 n "For a brief moment, neither of them moved."
-
 n "The girl quickly steadied herself before looking up."
-
 n "He did the same."
-
 n "Their eyes met."
 
 n "Around them, a few nearby students slowed down to see what had happened."
-
 n "Some looked curious."
-
 n "Others looked amused."
-
 n "The hallway suddenly felt much quieter."
-
 n "Or maybe he was simply too embarrassed to hear anything else."
 
 mc_thought "..."
-
 mc_thought "Great."
-
 mc_thought "First day."
-
 mc_thought "First hallway."
-
 mc_thought "And I already ran into someone."
 
 scene Collision 7
 
 n "The books remained scattered between them."
-
 n "Waiting for someone to make the first move."
 
 #═══════════════════════
