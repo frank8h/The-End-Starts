@@ -1,0 +1,176 @@
+#═══════════════════════
+# RETURN
+#═══════════════════════
+
+scene black
+with Dissolve(1.0)
+
+pause 0.5
+
+centered "{size=+15}Back to reality...{/size}"
+
+scene University_Hallway_Back_Empty_Day
+show black:
+    alpha 0.9
+
+centered "{size=+15}07:55 AM{/size}"
+
+pause 1.0
+
+scene University_Hallway_MC_Think_BG_Day
+with fade
+
+n "The memory slowly faded away."
+n "The crowded hallway returned."
+n "The voices, footsteps."
+n "The noise of students moving from one class to another."
+n "For a moment, it felt strange."
+n "As if part of him was still sitting in that old room staring at those documents."
+
+mc_thought "..."
+mc_thought "No."
+mc_thought "I'm not here to think about that."
+mc_thought "Not today."
+
+scene University_Hallway_MC_LS_BD_Day
+with Fade(0.8, 0.5, 0.8)
+
+n "He took a slow breath and adjusted the strap of his bag."
+
+mc_thought "I came all the way here for a reason."
+mc_thought "If I want answers...{w=0.5}Then I have to start somewhere."
+mc_thought "And right now..."{w=0.5}That starts with surviving my first day."
+
+scene University_Hallway_MC_LS_BU_Day
+
+n "He picked up his pace and continued down the hallway."
+n "The feeling of uncertainty hadn't disappeared."
+n "But at least he was moving again."
+
+scene University_Hallway_Secondary_Day
+
+show MC Front Stand_Bag LS_BD:
+    xpos 350
+    ypos 270
+    zoom 0.4
+
+n "The university was larger than he expected."
+n "Every hallway seemed connected to another."
+n "Every turn revealed a place he hadn't seen before."
+
+mc_thought "I should've looked at the map."
+mc_thought "Or at least pretended I knew where I was going."
+
+scene University_Hallway_Window_Day
+
+show MC Front Stand_Bag LR_BD:
+    xpos 800
+    ypos 310
+    zoom 0.4
+
+n "As he walked, his attention drifted toward the tall windows lining the corridor."
+n "Morning sunlight spilled across the floor and illuminated parts of the campus outside."
+
+mc_thought "..."
+mc_thought "I have to admit."
+mc_thought "This place looks better than I expected."
+
+n "For the first time since arriving, a small smile appeared on his face."
+n "Maybe..."
+n "Just maybe..."
+n "Starting over wouldn't be as terrible as he imagined."
+
+#═══════════════════════
+# COLLISION
+#═══════════════════════
+
+scene Collision 1
+with fade
+
+n "As he continued down the hallway, his attention drifted from one thing to another."
+
+mc_thought "I still need to unpack half the apartment."
+mc_thought "Buy groceries."
+mc_thought "Figure out where everything is around here."
+mc_thought "And somehow survive my first week."
+
+
+n "He glanced toward the posters on his left."
+
+mc_thought "The new apartment..{w=0.5}The university..{w=0.5}The transfer."
+mc_thought "Maybe I took on too much at once."
+mc_thought "Or no this won't be so bad after all."
+
+scene Collision 2
+
+n "At that exact moment—"
+n "Someone suddenly rushed out of a nearby classroom."
+
+#Both talking at the same time
+
+n "{color=#2D4F7A}[player_name]{/color}: {color=#00FFB3}almost forgot the car also still ne—{/color}\n
+{color=#D42F75}.....{/color}: {color=#00FFB3}I'm late, I have to ru—!{nw}{/color}"
+
+window hide
+
+scene Collision 3
+with hpunch
+
+n "Neither of them had enough time to react."
+
+n "{color=#2D4F7A}[player_name]{/color}: {color=#00FFB3}What...?!{/color}\n
+{color=#D42F75}.....{/color}: {color=#00FFB3}Ah—!{/color}"
+
+scene Collision 4
+
+n "The collision wasn't hard."
+n "But it was enough."
+n "Several books slipped from her arms."
+n "A folder hit the floor."
+n "Loose papers scattered across the hallway."
+
+scene Collision 5
+
+f_anonymous "Oh no...!"
+
+mc "Huh...?!"
+
+n "The sound of falling books echoed louder than it should have."
+
+scene Collision 6
+
+n "For a brief moment, neither of them moved."
+n "The girl quickly steadied herself before looking up."
+n "He did the same."
+n "Their eyes met."
+
+n "Around them, a few nearby students slowed down to see what had happened."
+n "Some looked curious."
+n "Others looked amused."
+n "The hallway suddenly felt much quieter."
+n "Or maybe he was simply too embarrassed to hear anything else."
+
+mc_thought "..."
+mc_thought "Great."
+mc_thought "First day."
+mc_thought "First hallway."
+mc_thought "And I already ran into someone."
+
+scene Collision 7
+
+n "The books remained scattered between them."
+n "Waiting for someone to make the first move."
+
+#═══════════════════════
+# FIRST CHOICE
+#═══════════════════════
+
+menu:
+    "Bend down and help her pick up the books":
+        jump Day01_Help
+
+    "Ignore it and enter the classroom":
+        jump Day01_Ignore
+
+    "Get annoyed and blame her":
+        jump Day01_Angry

@@ -12,31 +12,52 @@ label Chapter_01_Day01:
 scene University_Parking_Empty_Day
 with fade
 
-n "It was his first real day in a long time."
-
-n "The old brown car slowly came to a stop in front of the university."
+n "It was his first real day in a long time. The old brown car slowly rolled into the university parking lot before finally coming to a stop near the entrance."
 
 scene Car_University_Driver_Front_Day
 with dissolve
 
-n "He turned off the engine."
-
-n "He stayed seated for a few seconds."
-
-n "Students going inside the university as if they all already knew where they belonged."
+n "The engine went silent, yet he remained seated with his hands resting on the steering wheel, staring through the windshield at the students moving through the gates."
+n "Some were laughing with friends, others were already discussing assignments, and a few walked across the campus as if they had done it a thousand times before."
 
 scene Car_University_Driver_Side_Day
 with dissolve
 
-mc_thought "Ugh..."
+mc "..."
+mc "They all look like they know exactly where they're going."
 
-n "As for him..."
+n "Everything around him felt normal, almost routine, while he sat there wondering where he was supposed to fit into all of it."
 
-n "He still wasn't sure."
+mc "Meanwhile, I don't even know where my first classroom is."
 
-n "He let go of the steering wheel."
+mc "Ugh..."
 
-n "Took a quiet breath."
+n "He leaned back against the seat and let out a quiet sigh, hoping that somehow getting out of the car would feel easier if he waited a few more seconds."
+
+mc "New city. New university. New major."
+mc "What could possibly go wrong?"
+
+pause 0.3
+
+show Car_University_Driver_Front_Day:
+    blur 20
+show black:
+    alpha 0.25
+
+show MC SG Face Smile
+with dissolve
+
+mc "..."
+mc "Actually, don't answer that."
+
+n "A small smile appeared on his face before fading just as quickly. He loosened his grip on the steering wheel and took a slow breath."
+
+scene Car_University_Driver_Side_Day
+with dissolve
+
+mc "Come on."
+mc "You chose this."
+mc "Let's get this over with."
 
 #═══════════════════════
 # FLASHBACK — APARTMENT
@@ -46,7 +67,7 @@ scene black
 with Dissolve(1.0)
 
 pause 0.5
-centered "{size=+15}One week ago...{/size}"
+centered "{size=50}{i}One week ago...{nw=1}{/i}{/size}"
 pause 1.5
 
 scene Flashback Old_Room Full
@@ -58,32 +79,31 @@ show black:
     alpha 0.25
 
 show MC SG Face Neutral
-mc_thought "It had only been a week since I left."
+with dissolve
 
-mc_thought "The old room."
-mc_thought "The old life."
-mc_thought "And moved to a new apartment."
-mc_thought "A new University."
+mc_thought "It's only been a week since I left everything behind."
+mc_thought "The old room, the old routine, the life I'd gotten used to... all of it feels much farther away than it should."
+mc_thought "And now I'm here."
+mc_thought "New apartment. New university. New beginning."
 
 #═══════════════════════
 # BACK TO PRESENT
 #═══════════════════════
 
+pause 0.5
 scene University_Parking_Front_Day
-with dissolve
+with fade
 
-n "He grabbed his bag and stepped outside and closed the car door."
+n "The memory faded as he stepped out of the car and closed the door behind him."
 
 scene University_MC_Parking_Look_Day
 with dissolve
 
-n "Then looked at it."
-
-n "Old paint."
-
-n "Faded brown."
-
-n "Small scratches."
+n "Before leaving, he stopped for a moment and looked back at it."
+n "The faded brown paint, the small scratches along the doors, and the countless signs of age made it look older than it really was."
+n "It wasn't impressive."
+n "It wasn't fast."
+n "But it had been with him through more than he cared to admit."
 
 scene University_MC_Parking_Go_Day
 with fade
@@ -91,29 +111,42 @@ with fade
 mc "We'll keep going a little longer too."
 
 scene University_Front_Day
-with dissolve
+show University_Front_Day:
+    blur 3
+
 
 show MC Back Stand_Bag:
     xpos 500
-    ypos 400
+    ypos 200
     zoom 1
 
-n "He began walking."
+n "With that, he adjusted the strap of his bag and started walking toward the university entrance."
+
+scene University_Front_Day
+with dissolve
+show University_Front_Day:
+    blur 3
 
 show MC Back Stand_Bag:
     xpos 600
-    ypos 500
+    ypos 350
     zoom 0.8
 
-n "A new university."
+mc "A new university."
+mc "A new city."
+
+scene University_Front_Day
+with dissolve
+show University_Front_Day:
+    blur 3
+
 
 show MC Back Stand_Bag:
-    xpos 750
-    ypos 650
-    zoom 0.5
+    xpos 650
+    ypos 550
+    zoom 0.6
 
-n "A new city."
-n "And a new major."
+mc "And a completely different major."
 
 #Focus_Face
 scene University_Gate_Day
@@ -125,18 +158,32 @@ show black:
 show MC SG Face Neutral
 with dissolve
 
-n "He raised his eyes."
+n "He slowed down slightly as the main building came into view."
+n "For a few seconds, he simply stared at it."
 
-pause 0.4
+show MC SG Face Speak
+with dissolve
 
-mc_thought "A new beginning, Here we are..."
+mc "A new beginning..."
 
-n "But even as he said it... , He wasn't completely convinced."
+pause 0.3
+
+mc "Here we are."
+
+n "The words sounded nice in his head."
+n "Almost convincing."
+
+show MC SG Face Neutral
+with dissolve
+
+mc_thought "..."
+mc_thought "Why does it feel like I'm starting over from zero?"
+
+n "Even now, standing in front of the university gates, a small part of him still wasn't completely convinced he belonged here."
 
 #═══════════════════════
 # SCENE 02 — HALLWAY
 #═══════════════════════
-
 scene University_Hallway_Front_Ppl_Day
 
 show MC Back Stand_Bag:
@@ -144,29 +191,44 @@ show MC Back Stand_Bag:
     ypos 400
     zoom 1.3
 
-n "He entered the main hallway."
-n "New enviroment, Footsteps, Papers, Posters Unknown faces and Students laughing."
+n "The moment he stepped into the main hallway, he was greeted by the noise of university life."
+n "Students moved in every direction, conversations overlapped from across the corridor, and posters covered nearly every section of the walls."
+n "Everything felt busy."
+n "Everything felt alive."
+n "And somehow..."
+n "He felt completely out of place."
 
 scene University_Hallway_MC_LS_BU_Day
 
-n "He passed a half of the hallway and doesn't know what next."
+n "He continued walking through the hallway, occasionally glancing at room numbers and signs, trying to convince himself that he knew what he was doing."
 
-pause 0.7
+mc_thought "Just keep walking."
 
-n "Then..."
+mc_thought "It's your first day. Nobody expects you to know everything."
+
+n "A group of students passed by him laughing about something he didn't understand."
+
+n "For a moment, he wondered how long it would take before this place stopped feeling unfamiliar."
 
 scene University_Hallway_MC_LS_BD_Day
 
 pause 0.5
 
-n "For no clear reason..."
+n "Then, without warning, his steps slowed."
 
-n "His steps stopped, and droped the bag on the ground."
+n "The crowd continued moving around him."
+
+n "But he stopped."
+
+n "A strange feeling settled in his chest."
 
 scene University_Hallway_MC_Think_BG_Day
 with fade
 
+mc_thought "..."
 mc_thought "Why am I even here?"
+mc_thought "After everything..."
+mc_thought "Why does this still feel wrong?"
 
 #═══════════════════════
 # MEMORY
@@ -177,92 +239,113 @@ scene black
 with Dissolve(1.0)
 
 pause 0.5
-
-centered "{size=+15}Several months earlier...{/size}"
-
+centered "{size=50}{i}Several months earlier...{nw=1}{/i}{/size}"
 pause 1.5
 
 scene Flashback Old_Room Search
 with Fade(0.8, 0.5, 0.8)
 
-n "He was packing Without thinking much."
-
-#to wait {w=0.5}.
-n "Old papers, {w=0.5}notebooks, {w=0.5}bills..."
+n "He had been packing his belongings without paying much attention to what he was throwing into boxes."
+n "Old notebooks."
+n "Receipts."
+n "Class notes."
+n "Years of things he had forgotten existed."
 
 scene Flashback Old_Room File
 with dissolve
-pause 0.5
 
-n "Then he found a file."
+n "Then he found a small collection of documents tucked away beneath several folders."
 
 scene Flashback Old_Room Old_File
 with dissolve
-pause 0.5
 
-n "More files, old papers and washy photos"
+n "At first, it seemed like nothing important."
+n "Just more paperwork."
+n "More forgotten memories."
+n "More things waiting to be thrown away."
 
 show expression "Flashback Old_Room Search" at flashback_blur
-with fade 
 
 show black:
     alpha 0.25
 
 show MC SG Face Think
+with dissolve
 
-mc "I have never seen these files nor documents!"
+mc "I've never seen these before."
+mc "What even is all this?"
 
-n "Then he stopped."
+n "Curiosity made him open the first file."
+n "Then the second."
+n "Then another."
 
 scene Flashback Old_Room Old_File2
 with hpunch
-pause 0.5
 
-mc "What is this!"
+mc "Wait..."
 mc "Is that my name?"
-mc "But the contents..., {w=0.5}ugh I cant read the name."
+
+n "He immediately sat down."
+n "But the file wasn't about him, actually it was about his father."
 
 mc "A report, {w=0.5}an accident, {w=0.5}the case closed!"
-mc "\"Very few pages, {w=0.5}too few...\" {color=#AAAAAA}he added.{/color}"
+mc "That's it?"
+
+n "He flipped through the pages again."
+
+scene Flashback Old_Room Old_File2
+show Flashback Old_Room Old_File2:
+    blur 15
+show black:
+    alpha 0.25
+
+show MC SG Face Think
+with dissolve
+
+mc_thought "There should be more."
+mc_thought "Why are there too few pages?"
 
 scene Flashback Old_Room Think
 with dissolve
-pause 0.5
 
-n "He kept reading again and again."
+n "He read everything again and again."
+n "And with every reading, something felt more wrong."
 
-mc_thought " All Dates didn't match, the details are missing, names appearing only once."
+mc_thought "The dates don't match."
+mc_thought "Some details are missing."
+mc_thought "Names appear once and then disappear completely."
+mc_thought "None of this makes sense."
 
 scene Flashback Old_Room Read
 with dissolve
-pause 0.5
 
-n "And at the end..."
+n "By the time he reached the final page, frustration had already replaced curiosity."
 
-mc "I don't know why I see all these helpless information"
-mc "Finally, we're here in last page, thank god I wont waste more time reading this"
-
+mc "I wasted all this time for nothing."
+mc "Just one more page and I'm done."
 
 scene black
 with fade
-n "But suddenly..!"
+
+n "He spent the whole night reading, then he noticed it."
 
 scene Flashback Old_Room Shocked
 with vpunch
-pause 0.5
 
-mc "Wait..?"
+mc "..."
+mc "Wait."
 
 scene Flashback Old_Room Old_File3
 with dissolve
-pause 0.5
 
-mc "A missing page?"
-mc "..."
+mc "There's a page missing."
+mc "No..."
+mc "There has to be a page missing."
 mc "That's it?"
+mc "That's all they kept?"
 
 show expression "Flashback Old_Room Full" at flashback_blur
-with fade 
+with fade
 
 show black:
     alpha 0.25
@@ -272,39 +355,41 @@ show MC Front Stand_Pocket Think:
     ypos 250
     zoom 1
 
-n "That night, he couldn't sleep."
-n "He read, {w=0.5}searched, {w=0.5}asked!"
+n "Even though it was already morning, he didn't sleep at all."
+n "He searched online."
+n "Read old records."
+n "Asked questions nobody expected him to ask."
 
 show MC SG Face Think:
     xpos 400
     ypos -50
     zoom 1
-
-show expression "Flashback Old_Room Full" at flashback_blur
-with fade 
+with dissolve
 
 mc_thought "I don't believe it."
 mc_thought "They called it an accident."
-mc_thought "But..."
-mc_thought "Why did it feel like nobody wanted me to ask further?"
+mc_thought "Maybe it was."
+mc_thought "But why does it feel like someone wanted this story to end before it even started?"
+mc_thought "Why does it feel like nobody wanted me looking into it?"
 
 scene Flashback Old_Room Search
 with dissolve
 
-n "Weeks later..."
-
-n "He submitted a transfer request, moved from Computer Science to Law."
+n "Weeks later, he submitted a transfer request and left Computer Science behind."
 
 scene Flashback Old_Room Full
 with dissolve
 
 show MC Front Stand_Pocket Neutral:
     xpos 600
-    ypos 260
-    zoom 0.6
+    ypos 200
+    zoom 0.8
 
 mc_thought "Not because I want to become a lawyer."
-mc_thought "But because I want to know how the truth is uncovered."
+mc_thought "Not because I suddenly fell in love with law."
+mc_thought "But because I need answers."
+mc_thought "And if the truth is buried somewhere..."
+mc_thought "I'm going to find it."
 
 #═══════════════════════
 # RETURN
@@ -328,17 +413,32 @@ pause 1.0
 scene University_Hallway_MC_Think_BG_Day
 with fade
 
-n "He inhaled."
+n "The memory slowly faded away."
+n "The crowded hallway returned."
+n "The voices, footsteps."
+n "The noise of students moving from one class to another."
+n "For a moment, it felt strange."
+n "As if part of him was still sitting in that old room staring at those documents."
+
+mc_thought "..."
+mc_thought "No."
+mc_thought "I'm not here to think about that."
+mc_thought "Not today."
 
 scene University_Hallway_MC_LS_BD_Day
 with Fade(0.8, 0.5, 0.8)
 
-mc_thought "Yeah.. I want to make things clear, I have to work hard."
+n "He took a slow breath and adjusted the strap of his bag."
+
+mc_thought "I came all the way here for a reason."
+mc_thought "If I want answers...{w=0.5}Then I have to start somewhere."
+mc_thought "And right now...{w=0.5}That starts with surviving my first day."
 
 scene University_Hallway_MC_LS_BU_Day
 
-pause 0.5
-n "He pulled the bag up again and kept walking toward the class."
+n "He picked up his pace and continued down the hallway."
+n "The feeling of uncertainty hadn't disappeared."
+n "But at least he was moving again."
 
 scene University_Hallway_Secondary_Day
 
@@ -346,18 +446,41 @@ show MC Front Stand_Bag LS_BD:
     xpos 350
     ypos 270
     zoom 0.4
-    
-n "It's a new place, he is trying to figure it out."
+
+n "The university was larger than he expected."
+n "Every hallway seemed connected to another."
+n "Every turn revealed a place he hadn't seen before."
+
+scene University_Hallway_Secondary_Day
+show University_Hallway_Secondary_Day:
+    blur 15
+show black:
+    alpha 0.25
+
+show MC SG Face Speak
+
+mc_thought "I should've looked at the map."
+mc_thought "Or at least pretended I knew where I was going."
+
+pause 1.0
 
 scene University_Hallway_Window_Day
-
 show MC Front Stand_Bag LR_BD:
     xpos 800
     ypos 310
     zoom 0.4
 
-n "Looking right."
-mc_thought "It seems beautiful."
+n "As he walked, his attention drifted toward the tall windows lining the corridor."
+n "Morning sunlight spilled across the floor and illuminated parts of the campus outside."
+
+mc_thought "..."
+mc_thought "I have to admit."
+mc_thought "This place looks better than I expected."
+
+n "For the first time since arriving, a small smile appeared on his face."
+n "Maybe..."
+n "Just maybe..."
+n "Starting over wouldn't be as terrible as he imagined."
 
 #═══════════════════════
 # COLLISION
@@ -366,47 +489,87 @@ mc_thought "It seems beautiful."
 scene Collision 1
 with fade
 
-n "Then looked left"
-mc_thought "I really have so many things to do"
+n "As he continued down the hallway, his attention drifted from one thing to another."
+
+mc_thought "I still need to unpack half the apartment."
+mc_thought "Buy groceries."
+mc_thought "Figure out where everything is around here."
+mc_thought "And somehow survive my first week."
+
+
+n "He glanced toward the posters on his left."
+
+mc_thought "The new apartment..{w=0.5}The university..{w=0.5}The transfer."
+mc_thought "Maybe I took on too much at once."
+mc_thought "Perhaps this won't be so bad after all."
 
 scene Collision 2
 
-mc_thought "The new apartment.."
-
 n "At that exact moment—"
-n "Someone rushed out."
+n "Someone suddenly rushed out of a nearby classroom."
 
-#All talking at same time
-n "{color=#2D4F7A}[player_name]{/color}: {color=#00FFB3} And maybe the ca...!{/color}\n
-{color=#D42F75}.....{/color}: {color=#00FFB3}I'm late I have to ru..!{nw}{/color}"
+#Both talking at the same time
+
+n "{color=#2D4F7A}[player_name]{/color}: {color=#00FFB3}Ah almost forgot the car ne—{/color}\n
+{color=#D42F75}.....{/color}: {color=#00FFB3}I'm late, I have to ru—!{nw=0.5}{/color}"
 
 window hide
 
 scene Collision 3
-with hpunch
 
-n "{color=#2D4F7A}[player_name]{/color}: {color=#00FFB3}OMG?!{/color}\n
-{color=#D42F75}.....{/color}: {color=#00FFB3}What...!{/color}"
+f_anonymous "Oh no...!"
+mc "Huh...?!"
 
 scene Collision 4
-n "Books scattered."
+with hpunch
+
+n "Neither of them had enough time to react."
+
+n "{color=#2D4F7A}[player_name]{/color}: {color=#00FFB3}What...?!{/color}\n
+{color=#D42F75}.....{/color}: {color=#00FFB3}Ah..!{/color}{nw=1.5}"
 
 scene Collision 5
-f_anonymous "Oh noo.."
-mc "Huh..!"
+
+n "The collision wasn't hard."
+n "But it was enough."
+n "Several books slipped from her arms."
+n "A folder hit the floor."
+n "Loose papers scattered across the hallway."
+n "The sound of falling books echoed louder than it should have."
 
 scene Collision 6
-n 'They both looked to each other with shock on their faces.'
-n "Suddenly the hallway is too silent, only breathes are heard."
+with dissolve
 
+n "For a brief moment, neither of them moved."
+n "The girl blinked once, still trying to make sense of what had just happened, before she slowly raised her head."
+n "He did the same."
+n "Their eyes met."
 
-mc_thought "First minute here, and I already ran into someone."
+n "Around them, a few nearby students slowed down to see what had happened."
+n "Some looked curious."
+n "Others looked amused."
+n "The hallway suddenly felt much quieter."
+n "Or maybe he was simply too embarrassed to hear anything else."
+
+mc_thought "..."
+mc_thought "Great."
+mc_thought "First day."
+mc_thought "First hallway."
+mc_thought "And I already ran into someone."
 
 scene Collision 7
+
+n "The books remained scattered between them."
+n "Waiting for someone to make the first move."
 
 #═══════════════════════
 # FIRST CHOICE
 #═══════════════════════
+scene Collision 7
+show Collision 7:
+    blur 4
+show black:
+    alpha 0.05
 
 menu:
     "Bend down and help her pick up the books":
